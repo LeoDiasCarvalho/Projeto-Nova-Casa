@@ -1,43 +1,75 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: acme;
+    src: url("/_fontes/Acme/Acme-Regular.ttf");
+}
+
+@font-face {
+    font-family: titan;
+    src: url(/_fontes/Titan_One/TitanOne-Regular.ttf);
+}
+
 body{
     padding: 0px;
     margin: 0px;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
 }
 
 header#cabecalho{
-    background-color: #f71b1b;
+    background-color: #ff1717;
     height: 160px;
+    width: 100%;
     color: #fff;
+   font-family: "acme";
+    
+}
+
+header#cabecalho h2{
+    margin-top: 20px;
+    font-size: 2rem;
+    
 }
 
 header#cabecalho hgroup {
+    margin-top: 0px;
+    padding: 0px;
     text-align: center;
     position: absolute;
-    top: 5px;
-    left: 500px;
+    top: 0px;
+    left: 35%;
+
 }
 
 img#icone-logo{
+  position: absolute;
+
    
 }
 
 img#icone-faixada{
+    margin-top: 0px;
+   
+    padding: 0px;
     position: absolute;
-    top: 20px;
-    left: 1000px;
+    top: 0px;
+   left: 80%;
 }
 
 nav#menu{
     display: block;
+    
 }
 
 nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top: 110px;
-    left: 350px;
+    top: 90px;
+    left: 25%;
+    margin-top: 20px;
 }
 
 nav#menu li{
@@ -47,9 +79,54 @@ nav#menu li{
     
 }
 
-nav#menu li:hover{
-    color: #f71b1b;
+nav#menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+nav#menu ul li a:hover{
+    color: #ff1717;
     background-color: #fff;
-    transition: 0.8s;
+    transition: 0.6s;
     font: bold;
+    
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 2px solid #ff1717;
+   
+
+}
+
+footer#rodape p{
+    text-align: center;
+}
+
+footer#rodape p a img{
+    padding: 3px;
+}
+
+section#corpo{
+    padding: 10px;
+}
+
+section#corpo p a img{
+    margin: 8px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+section#corpo p a{
+    position: relative;
+}
+
+section aside#lateral{
+    border: 2px solid #ff1717;
+    height: 280px;
+    width: 800px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
 }
