@@ -120,6 +120,14 @@ section#corpo p a img{
 
 section#corpo p a{
     position: relative;
+    text-decoration: none;
+    color: #ff1717;
+    text-align: justify;
+}
+
+section#corpo p a:hover{
+    font-weight: bold;
+    transition: 0.6s;
 }
 
 section aside#lateral{
@@ -129,4 +137,10 @@ section aside#lateral{
     position: absolute;
     top: 200px;
     left: 500px;
+}
+
+section aside#lateral p#frase-contato{
+    text-align: center;
+    color: #ff1717;
+    font-family: "acme";
 }
