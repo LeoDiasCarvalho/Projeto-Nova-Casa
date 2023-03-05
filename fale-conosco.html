@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova Casa - Fale Conosco</title>
     <link rel="stylesheet" href="/_css/estilo.css">
+    <script src="/_javascript/funcoes.js"></script>
 </head>
 <body>
     <div id="interface">
@@ -16,7 +17,7 @@
             <img id="icone-faixada" src="/_imagens/faixada-peq.webp">
             
             <hgroup>
-                <h2>Onde seu sonho se realiza</h2>
+                <h2>Aqui seu sonho se realiza</h2>
             </hgroup>
 
             <nav id="menu">
@@ -51,22 +52,25 @@
                     <legend>Formulário</legend>
                     <p>
                         <label for="idNome">Nome 
-                            <input type="text" name="txtNome" id="idNome" placeholder=" Nome completo">
+                            <input type="text" name="txtNome" id="idNome" placeholder=" Nome completo" size="50">
                         </label>
                     </p>
                     <p>
-                        <Label for="idEmail">E-mail <input type="email" name="txtEmail" id="idEmail" placeholder=" exemplo@exemplo.com">
+                        <Label for="idEmail">E-mail <input type="email" name="txtEmail" id="idEmail" placeholder=" exemplo@exemplo.com" size="50">
                         </Label>
                     </p>
                     <p>
                         <label for="idTelefone">Telefone
-                            <input type="tel" name="txtTelefone" id="idTelefone" placeholder="(DDD) XXXX-XXXX">
+                            <input type="tel" name="txtTelefone" id="idTelefone" placeholder="(DDD) XXXX-XXXX" size="48">
                         </label>
                     </p>
-
+                    <p id="botoes">
+                        <input type="button" id="btnEnviar" onclick="enviarFormulario()">
+                        <input type="button" id="btnCancelar" onclick="limparFormulario()">
+                    </p>
                    </fieldset>
 
-                   <p id="frase-contato">Teremos o prazer de entrar em contato <img src="/_icones/cara-feliz.png"></p>
+                   <p id="frase-contato">Teremos o maior prazer de entrar em contato <img src="/_icones/cara-feliz.png"></p>
                    
                 </form>
 

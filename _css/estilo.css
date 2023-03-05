@@ -46,12 +46,10 @@ header#cabecalho hgroup {
 img#icone-logo{
   position: absolute;
 
-   
 }
 
 img#icone-faixada{
     margin-top: 0px;
-   
     padding: 0px;
     position: absolute;
     top: 0px;
@@ -102,6 +100,8 @@ footer#rodape{
 
 footer#rodape p{
     text-align: center;
+    color: #ff1717;
+    font-weight: bold;
 }
 
 footer#rodape p a img{
@@ -119,10 +119,13 @@ section#corpo p a img{
 }
 
 section#corpo p a{
+    margin-left: 40px;
     position: relative;
     text-decoration: none;
     color: #ff1717;
     text-align: justify;
+    font-family: "titan";
+    font-size: 15px;
 }
 
 section#corpo p a:hover{
@@ -133,11 +136,71 @@ section#corpo p a:hover{
 section aside#lateral{
    
     height: 280px;
-    width: 800px;
+    width: 750px;
     position: absolute;
     top: 200px;
     left: 500px;
 }
+
+section aside#lateral form fieldset#usuario{
+    border: 2px solid #ff1717;
+}
+
+section aside#lateral form fieldset#usuario legend{
+    color: #ff1717;
+    font-family: "titan";
+}
+
+section aside#lateral form{
+    font-family: "acme";
+    color: #ff1717;
+    padding: 5px;
+    font-size: 20px;
+}
+
+section aside#lateral form input{
+    border-radius: 5px;
+    color: #ff1717;
+    font-family: "acme";
+    font-size: 20px;
+}
+
+section aside#lateral form p#botoes input{
+
+}
+
+
+
+section aside#lateral form p#botoes input#btnEnviar{
+    background:url(/_icones/enviar.png) no-repeat;
+    position: absolute;
+    top: 130px;
+    left: 630px;
+    height: 35px;
+    width: 35px;
+    border: none;
+}
+
+section aside#lateral form p#botoes input#btnEnviar:hover{
+    -webkit-transform: scale(1.5);
+    -webkit-transition: 0.5s;
+}
+
+section aside#lateral form p#botoes input#btnCancelar{
+    background: url(/_icones/cancelar.png) no-repeat;
+    position: absolute;
+    top: 75px;
+    left: 630px;
+    height: 35px;
+    width: 35px;
+    border: none;
+}
+
+section aside#lateral form p#botoes input#btnCancelar:hover{
+    -webkit-transform: scale(1.5);
+    -webkit-transition: 0.5s;
+}
+
 
 section aside#lateral p#frase-contato{
     text-align: center;
