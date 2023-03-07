@@ -1,7 +1,13 @@
 function enviarFormulario(){
-    alert("enviado")
+    alert("enviado");
 }
 
 function limparFormulario(){
-    alert("limpo")
+    document.getElementById("idNome").value = "";
+    document.getElementById("idEmail").value = "";
+    document.getElementById("idTelefone").value = "";
+}
+
+function mudaFoto(foto){
+   document.getElementById("icone").src = foto;
 }
